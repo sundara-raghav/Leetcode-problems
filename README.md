@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0050-powx-n) |
 | [0066-plus-one](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0066-plus-one) |
 | [0069-sqrtx](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0069-sqrtx) |
+| [0070-climbing-stairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0070-climbing-stairs) |
 ## Recursion
 |  |
 | ------- |
@@ -108,4 +109,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0029-divide-two-integers) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0070-climbing-stairs) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
