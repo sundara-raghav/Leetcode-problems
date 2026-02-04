@@ -55,7 +55,11 @@ Your dashboard will be available at: `https://sundara-raghav.github.io/Leetcode-
    - Programming languages from file extensions
    - Difficulty levels using intelligent heuristics
    - Topics based on problem keywords
-3. **Real-time Updates**: Fetches latest data on every page load
+3. **Auto-Refresh**: Automatically syncs with GitHub every 10 seconds
+   - No page reload required
+   - New problems appear automatically when pushed
+   - Real-time stats updates
+   - Live sync indicator in navbar
 4. **No Authentication**: Works with public repositories
 
 ## 📋 Setup Instructions
@@ -74,9 +78,23 @@ Your dashboard will be available at: `https://sundara-raghav.github.io/Leetcode-
 
 ### 🔄 Auto-Updates
 
-- The dashboard fetches data from GitHub on every page load
-- No manual updates needed - just push new solutions via LeetHub!
+- **Auto-Refresh**: Dashboard automatically syncs every 10 seconds
+- **Live Sync Indicator**: Shows "Last synced X ago" in navbar
+- **Real-time Updates**: New problems appear without page reload
+- **Background Sync**: Fetches fresh data from GitHub API continuously
+- No manual refresh needed - just push new solutions via LeetHub!
 - GitHub Pages automatically rebuilds when you push changes
+
+### ⚡ Auto-Refresh Features
+
+The dashboard includes intelligent auto-refresh functionality:
+
+- **Sync Interval**: Every 10 seconds (configurable in `script.js`)
+- **Cache Bypass**: Force refreshes to get latest data
+- **Change Detection**: Logs when new problems are detected
+- **Error Handling**: Continues syncing even if individual requests fail
+- **Visual Feedback**: Live sync indicator updates every second
+- **Zero Interruption**: Dashboard updates seamlessly without page reload
 
 ### 🧪 Local Testing (Optional)
 
