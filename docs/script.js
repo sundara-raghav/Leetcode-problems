@@ -292,8 +292,7 @@ function watchDeviceTypeChanges() {
 
     _lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
     window.addEventListener('resize', () => {
-        const pendingTimeout = _resizeTimeout;
-        if (pendingTimeout) clearTimeout(pendingTimeout);
+        if (_resizeTimeout) clearTimeout(_resizeTimeout);
         _resizeTimeout = setTimeout(() => {
             const current = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
             if (current !== _lastDeviceType) {
