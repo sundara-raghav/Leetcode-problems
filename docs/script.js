@@ -68,6 +68,7 @@ const DIFFICULTY_KEYWORDS = {
 // ==================== Main Initialization ====================
 document.addEventListener('DOMContentLoaded', async () => {
     try {
+        watchDeviceTypeChanges();
         await fetchAllData();
         renderDashboard();
         setupEventListeners();
@@ -255,8 +256,8 @@ function loadCache() {
         if (!raw) return null;
         const parsed = JSON.parse(raw);
         if (!parsed.timestamp || !parsed.payload) return null;
-        if (Date.now() - parsed.timestamp > CACHE_TTL_MS) return null;
         if (isDesktop()) return null; // force fresh data on desktop to fix slow updates
+        if (Date.now() - parsed.timestamp > CACHE_TTL_MS) return null;
         return parsed.payload;
     } catch (error) {
         return null;
@@ -278,6 +279,17 @@ function saveCache(payload) {
 
 function isDesktop() {
     return window.innerWidth >= 992; // Bootstrap lg breakpoint; treat as desktop
+}
+
+let lastDeviceType = isDesktop() ? 'desktop' : 'mobile';
+function watchDeviceTypeChanges() {
+    window.addEventListener('resize', () => {
+        const current = isDesktop() ? 'desktop' : 'mobile';
+        if (current !== lastDeviceType) {
+            localStorage.removeItem(CACHE_KEY); // clear stale cache when switching modes
+            lastDeviceType = current;
+        }
+    });
 }
 
 function isCodeFile(filename) {
