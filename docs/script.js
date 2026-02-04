@@ -8,7 +8,7 @@ const CONFIG = {
 };
 
 const CACHE_KEY = 'leetcode_dashboard_cache_v1';
-const CACHE_TTL_MS = 60 * 1000; // 1 minute to reduce desktop staleness
+const CACHE_TTL_MS = 60 * 1000; // 1 minute mobile TTL (desktop bypasses cache)
 const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
 
@@ -283,8 +283,8 @@ function isDesktop() {
     return window.innerWidth >= 992; // Bootstrap lg breakpoint; treat as desktop
 }
 
-let lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
 function watchDeviceTypeChanges() {
+    let lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
     let resizeTimeout;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
@@ -294,7 +294,7 @@ function watchDeviceTypeChanges() {
                 localStorage.removeItem(CACHE_KEY); // clear stale cache when switching modes
                 lastDeviceType = current;
             }
-        }, 200); // debounce resize to avoid excessive cache clearing
+        }, 350); // debounce resize to avoid excessive cache clearing
     });
 }
 
