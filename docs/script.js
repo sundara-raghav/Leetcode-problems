@@ -13,7 +13,7 @@ const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
 const RESIZE_DEBOUNCE_MS = 350;
 const DESKTOP_BREAKPOINT_PX = 992;
-let resizeListenerRegistered = false;
+let isResizeListenerRegistered = false;
 let lastDeviceType = null;
 let resizeTimeout = null;
 
@@ -229,11 +229,11 @@ async function fetchCommits() {
 // ==================== Helper Functions ====================
 function loadCache() {
     try {
+        if (isDesktop()) return null; // force fresh data on desktop to prevent cache staleness
         const raw = localStorage.getItem(CACHE_KEY);
         if (!raw) return null;
         const parsed = JSON.parse(raw);
         if (!parsed.timestamp || !parsed.payload) return null;
-        if (isDesktop()) return null; // force fresh data on desktop to prevent cache staleness
         if (Date.now() - parsed.timestamp > CACHE_TTL_MS) return null;
         return parsed.payload;
     } catch (error) {
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function watchDeviceTypeChanges() {
-    if (resizeListenerRegistered) return;
+    if (isResizeListenerRegistered) return;
 
     window.addEventListener('resize', () => {
         if (resizeTimeout) clearTimeout(resizeTimeout);
@@ -306,7 +306,7 @@ function watchDeviceTypeChanges() {
             }
         }, RESIZE_DEBOUNCE_MS); // debounce resize to avoid excessive cache clearing
     });
-    resizeListenerRegistered = true;
+    isResizeListenerRegistered = true;
 }
 
 function isCodeFile(filename) {
