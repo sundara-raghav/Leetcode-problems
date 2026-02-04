@@ -11,9 +11,10 @@ const CACHE_KEY = 'leetcode_dashboard_cache_v1';
 const CACHE_TTL_MS = 60 * 1000; // 1 minute mobile TTL (desktop bypasses cache)
 const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
-let resizeListenerRegistered = false;
-let lastDeviceType;
-let resizeTimeout;
+const RESIZE_DEBOUNCE_MS = 350;
+let _resizeListenerRegistered = false;
+let _lastDeviceType;
+let _resizeTimeout;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -287,20 +288,20 @@ function isDesktop() {
 }
 
 function watchDeviceTypeChanges() {
-    if (resizeListenerRegistered) return;
+    if (_resizeListenerRegistered) return;
 
-    lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
+    _lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
     window.addEventListener('resize', () => {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
+        clearTimeout(_resizeTimeout);
+        _resizeTimeout = setTimeout(() => {
             const current = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
-            if (current !== lastDeviceType) {
+            if (current !== _lastDeviceType) {
                 localStorage.removeItem(CACHE_KEY); // clear stale cache when switching modes
-                lastDeviceType = current;
+                _lastDeviceType = current;
             }
-        }, 350); // debounce resize to avoid excessive cache clearing
+        }, RESIZE_DEBOUNCE_MS); // debounce resize to avoid excessive cache clearing
     });
-    resizeListenerRegistered = true;
+    _resizeListenerRegistered = true;
 }
 
 function isCodeFile(filename) {
