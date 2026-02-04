@@ -2,9 +2,13 @@
 const CONFIG = {
     owner: 'sundara-raghav',
     repo: 'Leetcode-problems',
+    branch: 'main',
     apiBase: 'https://api.github.com',
     itemsPerPage: 100
 };
+
+const CACHE_KEY = 'leetcode_dashboard_cache_v1';
+const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -92,96 +96,93 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ==================== Data Fetching ====================
 async function fetchAllData() {
+    const cached = loadCache();
+    if (cached) {
+        allProblems = cached.allProblems || [];
+        commits = cached.commits || [];
+    }
+
     try {
-        // Fetch repository contents
-        const contentsUrl = `${CONFIG.apiBase}/repos/${CONFIG.owner}/${CONFIG.repo}/contents`;
-        console.log('Fetching from:', contentsUrl);
-        
-        const response = await fetch(contentsUrl, {
-            headers: {
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        });
-        
-        if (!response.ok) {
-            if (response.status === 404) {
-                throw new Error('REPOSITORY_NOT_FOUND: The repository may be private or does not exist. Please ensure your repository is PUBLIC for the dashboard to work.');
-            } else if (response.status === 403) {
-                const resetTime = response.headers.get('X-RateLimit-Reset');
-                throw new Error(`GitHub API rate limit exceeded (403). Resets at ${new Date(resetTime * 1000).toLocaleTimeString()}`);
-            } else {
-                throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
-            }
-        }
-        
-        const contents = await response.json();
-        
-        // Filter problem directories
-        const problemDirs = contents.filter(item => 
-            item.type === 'dir' && /^\d{4}-/.test(item.name)
-        );
-        
-        // Fetch problem details
-        allProblems = await Promise.all(
-            problemDirs.map(dir => fetchProblemDetails(dir))
-        );
-        
-        // Fetch commits for streak calculation
+        const tree = await fetchRepoTree();
+        allProblems = buildProblemsFromTree(tree);
         await fetchCommits();
-        
+
+        saveCache({ allProblems, commits });
         console.log(`Loaded ${allProblems.length} problems`);
     } catch (error) {
         console.error('Error fetching data:', error);
+        if (cached) {
+            console.warn('Using cached data due to fetch error.');
+            return;
+        }
         throw error;
     }
 }
 
-async function fetchProblemDetails(dir) {
-    try {
-        // Parse problem number and title from directory name
-        const match = dir.name.match(/^(\d{4})-(.*)/);
-        const problemNumber = match ? parseInt(match[1]) : 0;
-        const problemTitle = match ? formatTitle(match[2]) : dir.name;
-        
-        // Fetch directory contents to get code files
-        const dirResponse = await fetch(dir.url);
-        const dirContents = await dirResponse.json();
-        
-        // Find code files
-        const codeFiles = dirContents.filter(file => 
-            file.name.endsWith('.java') || 
-            file.name.endsWith('.py') || 
-            file.name.endsWith('.cpp') ||
-            file.name.endsWith('.js') ||
-            file.name.endsWith('.ts')
-        );
-        
-        // Determine language
-        const languages = codeFiles.map(file => getLanguageFromExtension(file.name));
-        
-        // Determine difficulty (try to infer from README or use default logic)
-        const difficulty = inferDifficulty(problemNumber, problemTitle);
-        
-        // Determine topics
-        const topics = inferTopics(problemTitle);
-        
-        // Get file details for code viewer
-        const codeFile = codeFiles[0]; // Take the first code file
-        
-        return {
-            number: problemNumber,
-            title: problemTitle,
-            difficulty: difficulty,
-            topics: topics,
-            languages: languages,
-            dirName: dir.name,
-            codeFile: codeFile,
-            htmlUrl: `https://github.com/${CONFIG.owner}/${CONFIG.repo}/tree/main/${dir.name}`
-        };
-    } catch (error) {
-        console.error(`Error fetching details for ${dir.name}:`, error);
-        return null;
+async function fetchRepoTree() {
+    const treeUrl = `${CONFIG.apiBase}/repos/${CONFIG.owner}/${CONFIG.repo}/git/trees/${CONFIG.branch}?recursive=1`;
+    const response = await fetch(treeUrl, {
+        headers: { 'Accept': 'application/vnd.github.v3+json' }
+    });
+
+    if (!response.ok) {
+        if (response.status === 404) {
+            throw new Error('REPOSITORY_NOT_FOUND: The repository may be private or does not exist. Please ensure your repository is PUBLIC for the dashboard to work.');
+        } else if (response.status === 403) {
+            const resetTime = response.headers.get('X-RateLimit-Reset');
+            throw new Error(`GitHub API rate limit exceeded (403). Resets at ${new Date(resetTime * 1000).toLocaleTimeString()}`);
+        }
+        throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
     }
+
+    const data = await response.json();
+    return data.tree || [];
+}
+
+function buildProblemsFromTree(tree) {
+    const problemsMap = new Map();
+
+    tree.forEach(item => {
+        if (item.type !== 'blob') return;
+
+        const match = item.path.match(/^(\d{4}-[^/]+)\/([^/]+)$/);
+        if (!match) return;
+
+        const dirName = match[1];
+        const filename = match[2];
+
+        if (!isCodeFile(filename)) return;
+
+        if (!problemsMap.has(dirName)) {
+            const dirMatch = dirName.match(/^(\d{4})-(.*)$/);
+            const problemNumber = dirMatch ? parseInt(dirMatch[1]) : 0;
+            const problemTitle = dirMatch ? formatTitle(dirMatch[2]) : dirName;
+            problemsMap.set(dirName, {
+                number: problemNumber,
+                title: problemTitle,
+                dirName,
+                files: []
+            });
+        }
+
+        problemsMap.get(dirName).files.push(filename);
+    });
+
+    return Array.from(problemsMap.values()).map(entry => {
+        const languages = [...new Set(entry.files.map(getLanguageFromExtension))];
+        const difficulty = inferDifficulty(entry.number, entry.title);
+        const topics = inferTopics(entry.title);
+
+        return {
+            number: entry.number,
+            title: entry.title,
+            difficulty,
+            topics,
+            languages,
+            dirName: entry.dirName,
+            htmlUrl: `https://github.com/${CONFIG.owner}/${CONFIG.repo}/tree/${CONFIG.branch}/${entry.dirName}`
+        };
+    });
 }
 
 async function fetchCommits() {
@@ -189,28 +190,31 @@ async function fetchCommits() {
         let allCommits = [];
         let page = 1;
         let hasMore = true;
-        
-        while (hasMore && page <= 10) { // Limit to 10 pages (1000 commits max)
-            const commitsUrl = `${CONFIG.apiBase}/repos/${CONFIG.owner}/${CONFIG.repo}/commits?per_page=${CONFIG.itemsPerPage}&page=${page}`;
+
+        const sinceDate = new Date();
+        sinceDate.setDate(sinceDate.getDate() - 365);
+        const since = sinceDate.toISOString();
+
+        while (hasMore && page <= 3) {
+            const commitsUrl = `${CONFIG.apiBase}/repos/${CONFIG.owner}/${CONFIG.repo}/commits?per_page=${CONFIG.itemsPerPage}&page=${page}&since=${encodeURIComponent(since)}`;
             const response = await fetch(commitsUrl);
-            
+
             if (!response.ok) break;
-            
+
             const pageCommits = await response.json();
-            
+
             if (pageCommits.length === 0) {
                 hasMore = false;
             } else {
                 allCommits = allCommits.concat(pageCommits);
                 page++;
             }
-            
-            // GitHub API rate limiting - stop if we get enough data
+
             if (pageCommits.length < CONFIG.itemsPerPage) {
                 hasMore = false;
             }
         }
-        
+
         commits = allCommits;
         console.log(`Loaded ${commits.length} commits`);
     } catch (error) {
@@ -220,6 +224,34 @@ async function fetchCommits() {
 }
 
 // ==================== Helper Functions ====================
+function loadCache() {
+    try {
+        const raw = localStorage.getItem(CACHE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (!parsed.timestamp || !parsed.payload) return null;
+        if (Date.now() - parsed.timestamp > CACHE_TTL_MS) return null;
+        return parsed.payload;
+    } catch (error) {
+        return null;
+    }
+}
+
+function saveCache(payload) {
+    try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify({
+            timestamp: Date.now(),
+            payload
+        }));
+    } catch (error) {
+        // Ignore cache errors (e.g., storage quota)
+    }
+}
+
+function isCodeFile(filename) {
+    return /\.(java|py|cpp|js|ts)$/i.test(filename);
+}
+
 function formatTitle(slug) {
     return slug
         .split('-')
@@ -485,7 +517,9 @@ function renderProblems(problems) {
     const problemsList = document.getElementById('problemsList');
     const noResults = document.getElementById('noResults');
     
-    if (problems.length === 0) {
+    const safeProblems = (problems || []).filter(Boolean);
+    
+    if (safeProblems.length === 0) {
         problemsList.innerHTML = '';
         noResults.style.display = 'block';
         return;
@@ -494,7 +528,7 @@ function renderProblems(problems) {
     noResults.style.display = 'none';
     
     // Sort by problem number
-    const sortedProblems = problems.sort((a, b) => a.number - b.number);
+    const sortedProblems = safeProblems.sort((a, b) => a.number - b.number);
     
     problemsList.innerHTML = sortedProblems.map(problem => `
         <div class="problem-card" onclick="viewCode('${problem.dirName}', '${escapeHtml(problem.title)}')">
