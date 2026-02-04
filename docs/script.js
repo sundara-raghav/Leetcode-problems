@@ -12,9 +12,10 @@ const CACHE_TTL_MS = 60 * 1000; // 1 minute mobile TTL (desktop bypasses cache)
 const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
 const RESIZE_DEBOUNCE_MS = 350;
+const DESKTOP_BREAKPOINT_PX = 992;
 let resizeListenerRegistered = false;
-let lastDeviceType;
-let resizeTimeout;
+let lastDeviceType = null;
+let resizeTimeout = null;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -232,7 +233,7 @@ function loadCache() {
         if (!raw) return null;
         const parsed = JSON.parse(raw);
         if (!parsed.timestamp || !parsed.payload) return null;
-        if (isDesktop()) return null; // force fresh data on desktop to fix slow updates
+        if (isDesktop()) return null; // force fresh data on desktop to prevent cache staleness
         if (Date.now() - parsed.timestamp > CACHE_TTL_MS) return null;
         return parsed.payload;
     } catch (error) {
@@ -254,7 +255,7 @@ function saveCache(payload) {
 }
 
 function isDesktop() {
-    return window.innerWidth >= 992; // Bootstrap lg breakpoint (992px); treat as desktop
+    return window.innerWidth >= DESKTOP_BREAKPOINT_PX; // Bootstrap lg breakpoint; treat as desktop
 }
 
 function getCurrentDeviceType() {
