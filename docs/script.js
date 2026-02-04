@@ -15,7 +15,6 @@ const RESIZE_DEBOUNCE_MS = 350;
 let _resizeListenerRegistered = false;
 let _lastDeviceType;
 let _resizeTimeout;
-_lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -75,6 +74,7 @@ const DIFFICULTY_KEYWORDS = {
 // ==================== Main Initialization ====================
 document.addEventListener('DOMContentLoaded', async () => {
     try {
+        _lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
         watchDeviceTypeChanges();
         await fetchAllData();
         renderDashboard();
