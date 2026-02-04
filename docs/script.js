@@ -8,7 +8,7 @@ const CONFIG = {
 };
 
 const CACHE_KEY = 'leetcode_dashboard_cache_v1';
-const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes
+const CACHE_TTL_MS = 60 * 1000; // 1 minute to reduce desktop staleness
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -256,6 +256,7 @@ function loadCache() {
         const parsed = JSON.parse(raw);
         if (!parsed.timestamp || !parsed.payload) return null;
         if (Date.now() - parsed.timestamp > CACHE_TTL_MS) return null;
+        if (isDesktop()) return null; // force fresh data on desktop to fix slow updates
         return parsed.payload;
     } catch (error) {
         return null;
@@ -264,6 +265,8 @@ function loadCache() {
 
 function saveCache(payload) {
     try {
+        // Skip caching on desktop to avoid visible lag vs mobile
+        if (isDesktop()) return;
         localStorage.setItem(CACHE_KEY, JSON.stringify({
             timestamp: Date.now(),
             payload
@@ -271,6 +274,10 @@ function saveCache(payload) {
     } catch (error) {
         // Ignore cache errors (e.g., storage quota)
     }
+}
+
+function isDesktop() {
+    return window.innerWidth >= 992; // Bootstrap lg breakpoint; treat as desktop
 }
 
 function isCodeFile(filename) {
