@@ -284,7 +284,7 @@ function saveCache(payload) {
 }
 
 function isDesktop() {
-    return window.innerWidth >= 992; // Bootstrap lg breakpoint; treat as desktop
+    return window.innerWidth >= 992; // Bootstrap lg breakpoint (992px); treat as desktop
 }
 
 function watchDeviceTypeChanges() {
@@ -292,7 +292,8 @@ function watchDeviceTypeChanges() {
 
     _lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
     window.addEventListener('resize', () => {
-        clearTimeout(_resizeTimeout);
+        const pendingTimeout = _resizeTimeout;
+        if (pendingTimeout) clearTimeout(pendingTimeout);
         _resizeTimeout = setTimeout(() => {
             const current = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
             if (current !== _lastDeviceType) {
