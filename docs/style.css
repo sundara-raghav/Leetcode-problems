@@ -69,6 +69,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent-primary) !important;
 }
 
+/* Sync Indicator */
+#syncIndicator {
+    font-size: 0.85rem;
+    color: var(--text-secondary) !important;
+    cursor: default;
+}
+
+#syncIndicator i {
+    color: var(--accent-success);
+}
+
 /* ==================== Cards ==================== */
 .stat-card {
     background: var(--bg-secondary);

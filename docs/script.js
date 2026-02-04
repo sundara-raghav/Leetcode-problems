@@ -13,9 +13,12 @@ const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
 const RESIZE_DEBOUNCE_MS = 350;
 const DESKTOP_BREAKPOINT_PX = 992;
+const AUTO_REFRESH_INTERVAL_MS = 10 * 1000; // 10 seconds auto-refresh
 let isResizeListenerRegistered = false;
 let lastDeviceType = null;
 let resizeTimeout = null;
+let autoRefreshInterval = null;
+let lastSyncTime = null;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -73,9 +76,9 @@ const DIFFICULTY_KEYWORDS = {
 };
 
 // ==================== Data Fetching ====================
-async function fetchAllData() {
+async function fetchAllData(forceRefresh = false) {
     const cached = loadCache();
-    if (cached) {
+    if (cached && !forceRefresh) {
         allProblems = cached.allProblems || [];
         commits = cached.commits || [];
         return;
@@ -87,6 +90,7 @@ async function fetchAllData() {
         await fetchCommits();
 
         saveCache({ allProblems, commits });
+        lastSyncTime = new Date();
         console.log(`Loaded ${allProblems.length} problems`);
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -102,6 +106,7 @@ async function fetchAllData() {
                 allProblems = fallbackProblems;
                 commits = [];
                 saveCache({ allProblems, commits });
+                lastSyncTime = new Date();
                 return;
             }
         }
@@ -271,6 +276,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderDashboard();
         setupEventListeners();
         hideLoading();
+        startAutoRefresh();
+        updateSyncIndicator();
     } catch (error) {
         console.error('Error initializing dashboard:', error);
         let errorMessage = 'Failed to load data from GitHub.';
@@ -838,6 +845,71 @@ function showError(message) {
             </div>
         </div>
     `;
+}
+
+// ==================== Auto-Refresh Functions ====================
+function startAutoRefresh() {
+    // Clear any existing interval
+    if (autoRefreshInterval) {
+        clearInterval(autoRefreshInterval);
+    }
+    
+    // Set up auto-refresh every 10 seconds
+    autoRefreshInterval = setInterval(async () => {
+        try {
+            console.log('Auto-refreshing data...');
+            const previousCount = allProblems.length;
+            
+            // Force refresh to bypass cache
+            await fetchAllData(true);
+            
+            const currentCount = allProblems.length;
+            if (currentCount !== previousCount) {
+                console.log(`Detected ${currentCount - previousCount} new problems!`);
+            }
+            
+            // Re-render dashboard with new data
+            renderDashboard();
+            updateSyncIndicator();
+            
+        } catch (error) {
+            console.error('Auto-refresh error:', error);
+            // Continue trying even if one refresh fails
+        }
+    }, AUTO_REFRESH_INTERVAL_MS);
+    
+    // Update sync indicator display every second
+    setInterval(() => {
+        updateSyncIndicator();
+    }, 1000);
+    
+    console.log(`Auto-refresh started: syncing every ${AUTO_REFRESH_INTERVAL_MS / 1000} seconds`);
+}
+
+function updateSyncIndicator() {
+    const syncIndicator = document.getElementById('syncIndicator');
+    if (syncIndicator && lastSyncTime) {
+        const timeAgo = getTimeAgo(lastSyncTime);
+        syncIndicator.innerHTML = `
+            <i class="bi bi-arrow-repeat"></i> Last synced ${timeAgo}
+        `;
+    }
+}
+
+function getTimeAgo(date) {
+    const seconds = Math.floor((new Date() - date) / 1000);
+    
+    if (seconds < 10) return 'just now';
+    if (seconds < 60) return `${seconds} seconds ago`;
+    
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+    
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+    
+    const days = Math.floor(hours / 24);
+    return `${days} day${days > 1 ? 's' : ''} ago`;
 }
 
 // Make functions available globally
