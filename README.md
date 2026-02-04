@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0204-count-primes) |
+| [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
 ## Recursion
 |  |
 | ------- |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0021-merge-two-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0024-swap-nodes-in-pairs) |
 | [0050-powx-n](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0050-powx-n) |
+| [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
 ## String
 |  |
 | ------- |
@@ -129,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0029-divide-two-integers](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0029-divide-two-integers) |
 | [0136-single-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0136-single-number) |
+| [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
 ## Dynamic Programming
 |  |
 | ------- |
