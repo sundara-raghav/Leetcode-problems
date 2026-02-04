@@ -100,6 +100,7 @@ async function fetchAllData() {
     if (cached) {
         allProblems = cached.allProblems || [];
         commits = cached.commits || [];
+        return;
     }
 
     try {
@@ -111,11 +112,35 @@ async function fetchAllData() {
         console.log(`Loaded ${allProblems.length} problems`);
     } catch (error) {
         console.error('Error fetching data:', error);
+
         if (cached) {
             console.warn('Using cached data due to fetch error.');
             return;
         }
+
+        if (String(error.message).toLowerCase().includes('rate limit')) {
+            const fallbackProblems = await fetchStatsJsonFallback();
+            if (fallbackProblems.length > 0) {
+                allProblems = fallbackProblems;
+                commits = [];
+                saveCache({ allProblems, commits });
+                return;
+            }
+        }
+
         throw error;
+    }
+}
+
+async function fetchStatsJsonFallback() {
+    try {
+        const rawUrl = `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/stats.json`;
+        const response = await fetch(rawUrl, { cache: 'no-cache' });
+        if (!response.ok) return [];
+        const stats = await response.json();
+        return buildProblemsFromStats(stats);
+    } catch (error) {
+        return [];
     }
 }
 
@@ -250,6 +275,48 @@ function saveCache(payload) {
 
 function isCodeFile(filename) {
     return /\.(java|py|cpp|js|ts)$/i.test(filename);
+}
+
+function normalizeDifficulty(value, number, title) {
+    if (!value) return inferDifficulty(number, title);
+    const v = String(value).toLowerCase();
+    if (v === 'easy') return 'Easy';
+    if (v === 'medium') return 'Medium';
+    if (v === 'hard') return 'Hard';
+    return inferDifficulty(number, title);
+}
+
+function buildProblemsFromStats(stats) {
+    const shas = stats?.leetcode?.shas || {};
+    const problems = [];
+
+    Object.entries(shas).forEach(([dirName, filesObj]) => {
+        if (!/^\d{4}-/.test(dirName) || typeof filesObj !== 'object') return;
+
+        const dirMatch = dirName.match(/^(\d{4})-(.*)$/);
+        const problemNumber = dirMatch ? parseInt(dirMatch[1]) : 0;
+        const problemTitle = dirMatch ? formatTitle(dirMatch[2]) : dirName;
+
+        const fileNames = Object.keys(filesObj).filter(name => name && name !== 'README.md' && name !== 'difficulty');
+        const languages = [...new Set(fileNames.filter(isCodeFile).map(getLanguageFromExtension))];
+
+        if (languages.length === 0) return;
+
+        const difficulty = normalizeDifficulty(filesObj.difficulty, problemNumber, problemTitle);
+        const topics = inferTopics(problemTitle);
+
+        problems.push({
+            number: problemNumber,
+            title: problemTitle,
+            difficulty,
+            topics,
+            languages,
+            dirName,
+            htmlUrl: `https://github.com/${CONFIG.owner}/${CONFIG.repo}/tree/${CONFIG.branch}/${dirName}`
+        });
+    });
+
+    return problems;
 }
 
 function formatTitle(slug) {
