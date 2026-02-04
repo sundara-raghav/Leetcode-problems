@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
+| [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
 ## Recursion
 |  |
 | ------- |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0204-count-primes) |
+| [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
 ## Queue
 |  |
 | ------- |
@@ -182,4 +184,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0387-first-unique-character-in-a-string) |
+## Simulation
+|  |
+| ------- |
+| [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
 <!---LeetCode Topics End-->
