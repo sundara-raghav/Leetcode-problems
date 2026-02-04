@@ -11,6 +11,9 @@ const CACHE_KEY = 'leetcode_dashboard_cache_v1';
 const CACHE_TTL_MS = 60 * 1000; // 1 minute mobile TTL (desktop bypasses cache)
 const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
+let resizeListenerRegistered = false;
+let lastDeviceType;
+let resizeTimeout;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -284,8 +287,9 @@ function isDesktop() {
 }
 
 function watchDeviceTypeChanges() {
-    let lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
-    let resizeTimeout;
+    if (resizeListenerRegistered) return;
+
+    lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
@@ -296,6 +300,7 @@ function watchDeviceTypeChanges() {
             }
         }, 350); // debounce resize to avoid excessive cache clearing
     });
+    resizeListenerRegistered = true;
 }
 
 function isCodeFile(filename) {
