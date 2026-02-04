@@ -12,9 +12,9 @@ const CACHE_TTL_MS = 60 * 1000; // 1 minute mobile TTL (desktop bypasses cache)
 const DEVICE_TYPE_DESKTOP = 'desktop';
 const DEVICE_TYPE_MOBILE = 'mobile';
 const RESIZE_DEBOUNCE_MS = 350;
-let _resizeListenerRegistered = false;
-let _lastDeviceType;
-let _resizeTimeout;
+let resizeListenerRegistered = false;
+let lastDeviceType;
+let resizeTimeout;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -70,37 +70,6 @@ const DIFFICULTY_KEYWORDS = {
     'Medium': ['medium', 'moderate', 'intermediate'],
     'Hard': ['hard', 'difficult', 'complex', 'advanced']
 };
-
-// ==================== Main Initialization ====================
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        _lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
-        watchDeviceTypeChanges();
-        await fetchAllData();
-        renderDashboard();
-        setupEventListeners();
-        hideLoading();
-    } catch (error) {
-        console.error('Error initializing dashboard:', error);
-        let errorMessage = 'Failed to load data from GitHub.';
-        
-        if (window.location.protocol === 'file:') {
-            errorMessage = '⚠️ Cannot load from file:// protocol. Please use a web server or deploy to GitHub Pages.';
-        } else if (error.message.includes('REPOSITORY_NOT_FOUND')) {
-            errorMessage = error.message.replace('REPOSITORY_NOT_FOUND: ', '');
-        } else if (error.message.includes('CORS') || error.message.includes('fetch') || error.message.includes('Failed to fetch')) {
-            errorMessage = '⚠️ <strong>Browser Security Restriction (CORS)</strong><br><br>' +
-                          'This happens when testing locally. The dashboard needs to be deployed to GitHub Pages to work properly.<br><br>' +
-                          '<strong>Why?</strong> Browsers block direct API requests from local files for security reasons.';
-        } else if (error.message.includes('rate limit')) {
-            errorMessage = '⚠️ GitHub API rate limit exceeded. Please try again in an hour or deploy to GitHub Pages for better limits.';
-        } else {
-            errorMessage = `⚠️ ${error.message}<br><br>This dashboard works best when deployed to GitHub Pages!`;
-        }
-        
-        showError(errorMessage);
-    }
-});
 
 // ==================== Data Fetching ====================
 async function fetchAllData() {
@@ -288,20 +257,55 @@ function isDesktop() {
     return window.innerWidth >= 992; // Bootstrap lg breakpoint (992px); treat as desktop
 }
 
+function getCurrentDeviceType() {
+    return isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
+}
+
+// ==================== Main Initialization ====================
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        lastDeviceType = getCurrentDeviceType();
+        watchDeviceTypeChanges();
+        await fetchAllData();
+        renderDashboard();
+        setupEventListeners();
+        hideLoading();
+    } catch (error) {
+        console.error('Error initializing dashboard:', error);
+        let errorMessage = 'Failed to load data from GitHub.';
+        
+        if (window.location.protocol === 'file:') {
+            errorMessage = '⚠️ Cannot load from file:// protocol. Please use a web server or deploy to GitHub Pages.';
+        } else if (error.message.includes('REPOSITORY_NOT_FOUND')) {
+            errorMessage = error.message.replace('REPOSITORY_NOT_FOUND: ', '');
+        } else if (error.message.includes('CORS') || error.message.includes('fetch') || error.message.includes('Failed to fetch')) {
+            errorMessage = '⚠️ <strong>Browser Security Restriction (CORS)</strong><br><br>' +
+                          'This happens when testing locally. The dashboard needs to be deployed to GitHub Pages to work properly.<br><br>' +
+                          '<strong>Why?</strong> Browsers block direct API requests from local files for security reasons.';
+        } else if (error.message.includes('rate limit')) {
+            errorMessage = '⚠️ GitHub API rate limit exceeded. Please try again in an hour or deploy to GitHub Pages for better limits.';
+        } else {
+            errorMessage = `⚠️ ${error.message}<br><br>This dashboard works best when deployed to GitHub Pages!`;
+        }
+        
+        showError(errorMessage);
+    }
+});
+
 function watchDeviceTypeChanges() {
-    if (_resizeListenerRegistered) return;
+    if (resizeListenerRegistered) return;
 
     window.addEventListener('resize', () => {
-        if (_resizeTimeout) clearTimeout(_resizeTimeout);
-        _resizeTimeout = setTimeout(() => {
-            const current = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
-            if (current !== _lastDeviceType) {
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            const current = getCurrentDeviceType();
+            if (current !== lastDeviceType) {
                 localStorage.removeItem(CACHE_KEY); // clear stale cache when switching modes
-                _lastDeviceType = current;
+                lastDeviceType = current;
             }
         }, RESIZE_DEBOUNCE_MS); // debounce resize to avoid excessive cache clearing
     });
-    _resizeListenerRegistered = true;
+    resizeListenerRegistered = true;
 }
 
 function isCodeFile(filename) {
