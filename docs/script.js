@@ -15,6 +15,7 @@ const RESIZE_DEBOUNCE_MS = 350;
 let _resizeListenerRegistered = false;
 let _lastDeviceType;
 let _resizeTimeout;
+_lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
 
 // ==================== Global State ====================
 let allProblems = [];
@@ -290,7 +291,6 @@ function isDesktop() {
 function watchDeviceTypeChanges() {
     if (_resizeListenerRegistered) return;
 
-    _lastDeviceType = isDesktop() ? DEVICE_TYPE_DESKTOP : DEVICE_TYPE_MOBILE;
     window.addEventListener('resize', () => {
         if (_resizeTimeout) clearTimeout(_resizeTimeout);
         _resizeTimeout = setTimeout(() => {
