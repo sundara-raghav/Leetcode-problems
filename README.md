@@ -1,6 +1,20 @@
 # Leetcode-problems
 A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
 
+## 🎯 Live Progress Dashboard
+
+**[View My LeetCode Progress Tracker →](https://sundara-raghav.github.io/Leetcode-problems/)**
+
+An interactive dashboard featuring:
+- 📊 Real-time statistics and difficulty breakdown
+- 🔥 Coding streak tracker
+- 🟩 GitHub-style contribution heatmap
+- 🧠 Auto-categorized DSA topics
+- 📂 Filterable problem explorer
+- 👨‍💻 Syntax-highlighted code viewer
+
+---
+
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
