@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0023-merge-k-sorted-lists) |
+| [0191-number-of-1-bits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0191-number-of-1-bits) |
 ## Linked List
 |  |
 | ------- |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0029-divide-two-integers](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0029-divide-two-integers) |
 | [0136-single-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0136-single-number) |
+| [0191-number-of-1-bits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
 ## Dynamic Programming
 |  |
