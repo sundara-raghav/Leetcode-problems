@@ -182,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0197-rising-temperature](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0197-rising-temperature) |
 | [0550-game-play-analysis-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0550-game-play-analysis-iv) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0570-managers-with-at-least-5-direct-reports) |
+| [0595-big-countries](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0595-big-countries) |
 ## Enumeration
 |  |
 | ------- |
