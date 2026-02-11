@@ -186,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0595-big-countries](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0595-big-countries) |
 | [0596-classes-with-at-least-5-students](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0596-classes-with-at-least-5-students) |
 | [0626-exchange-seats](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0626-exchange-seats) |
+| [1193-monthly-transactions-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1193-monthly-transactions-i) |
 ## Enumeration
 |  |
 | ------- |
