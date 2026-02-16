@@ -191,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0602-friend-requests-ii-who-has-the-most-friends](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0602-friend-requests-ii-who-has-the-most-friends) |
 | [0626-exchange-seats](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0626-exchange-seats) |
 | [1193-monthly-transactions-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1193-monthly-transactions-i) |
+| [1280-students-and-examinations](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1280-students-and-examinations) |
 ## Enumeration
 |  |
 | ------- |
