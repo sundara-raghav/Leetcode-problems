@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
 | [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
+| [0326-power-of-three](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0326-power-of-three) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1486-xor-operation-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1486-xor-operation-in-an-array) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0024-swap-nodes-in-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0024-swap-nodes-in-pairs) |
 | [0050-powx-n](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0050-powx-n) |
 | [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0326-power-of-three) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
 ## String
 |  |
