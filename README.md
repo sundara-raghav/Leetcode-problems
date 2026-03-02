@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0204-count-primes) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0875-koko-eating-bananas](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0875-koko-eating-bananas) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
 | [3683-earliest-time-to-finish-one-task](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3683-earliest-time-to-finish-one-task) |
 ## Hash Table
@@ -47,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0875-koko-eating-bananas](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0875-koko-eating-bananas) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -229,4 +231,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0700-search-in-a-binary-search-tree](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0700-search-in-a-binary-search-tree) |
+## Greedy
+|  |
+| ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+## Sliding Window
+|  |
+| ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+## Sorting
+|  |
+| ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+## Prefix Sum
+|  |
+| ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 <!---LeetCode Topics End-->
