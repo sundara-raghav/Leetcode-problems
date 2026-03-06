@@ -110,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0125-valid-palindrome) |
 | [0387-first-unique-character-in-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0387-first-unique-character-in-a-string) |
 | [0709-to-lower-case](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0709-to-lower-case) |
+| [3019-number-of-changing-keys](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3019-number-of-changing-keys) |
 ## Trie
 |  |
 | ------- |
