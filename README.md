@@ -205,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0596-classes-with-at-least-5-students](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0596-classes-with-at-least-5-students) |
 | [0602-friend-requests-ii-who-has-the-most-friends](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0602-friend-requests-ii-who-has-the-most-friends) |
 | [0626-exchange-seats](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0626-exchange-seats) |
+| [1174-immediate-food-delivery-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1174-immediate-food-delivery-ii) |
 | [1193-monthly-transactions-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1193-monthly-transactions-i) |
 | [1204-last-person-to-fit-in-the-bus](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1204-last-person-to-fit-in-the-bus) |
 | [1251-average-selling-price](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1251-average-selling-price) |
