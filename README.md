@@ -206,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0595-big-countries](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0595-big-countries) |
 | [0596-classes-with-at-least-5-students](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0596-classes-with-at-least-5-students) |
 | [0602-friend-requests-ii-who-has-the-most-friends](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0602-friend-requests-ii-who-has-the-most-friends) |
+| [0619-biggest-single-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0619-biggest-single-number) |
 | [0626-exchange-seats](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0626-exchange-seats) |
 | [1164-product-price-at-a-given-date](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1164-product-price-at-a-given-date) |
 | [1174-immediate-food-delivery-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1174-immediate-food-delivery-ii) |
