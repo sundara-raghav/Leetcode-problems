@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1539-kth-missing-positive-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1539-kth-missing-positive-number) |
 | [1672-richest-customer-wealth](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1672-richest-customer-wealth) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [2798-number-of-employees-who-met-the-target](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2798-number-of-employees-who-met-the-target) |
 | [2942-find-words-containing-character](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2942-find-words-containing-character) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
