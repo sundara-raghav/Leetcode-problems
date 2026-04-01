@@ -229,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1211-queries-quality-and-percentage](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1211-queries-quality-and-percentage) |
 | [1251-average-selling-price](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1251-average-selling-price) |
 | [1280-students-and-examinations](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1280-students-and-examinations) |
+| [1321-restaurant-growth](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1321-restaurant-growth) |
 | [1341-movie-rating](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1341-movie-rating) |
 | [1527-patients-with-a-condition](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1527-patients-with-a-condition) |
 | [1633-percentage-of-users-attended-a-contest](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1633-percentage-of-users-attended-a-contest) |
