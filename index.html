@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leetcode Problems Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="masthead card">
+      <div class="masthead-copy">
+        <p class="eyebrow">Live GitHub Pages dashboard</p>
+        <h1>Solved LeetCode questions, code, dates, and search in one place.</h1>
+        <p class="lede">
+          The page reads the repository on load, groups problems by topic, and fetches the selected solution, folder
+          contents, and submission timestamp directly from GitHub.
+        </p>
+      </div>
+      <div class="masthead-actions">
+        <a class="primary" href="https://github.com/sundara-raghav/Leetcode-problems" target="_blank" rel="noreferrer">Open repo</a>
+        <button class="secondary" id="refresh-data" type="button">Refresh data</button>
+      </div>
+    </header>
+
+    <section class="toolbar card" aria-label="Filters and search">
+      <label class="search-field">
+        <span>Search</span>
+        <input id="search-input" type="search" placeholder="Search by problem, folder, topic, or file" />
+      </label>
+
+      <label class="select-field">
+        <span>Difficulty</span>
+        <select id="difficulty-filter"></select>
+      </label>
+
+      <label class="select-field">
+        <span>Sort by</span>
+        <select id="sort-filter">
+          <option value="folder-asc">Folder order</option>
+          <option value="title-asc">Title A-Z</option>
+          <option value="difficulty-asc">Difficulty</option>
+          <option value="recent-desc">Latest submission</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card stat-card">
+        <span class="stat-label">Solved questions</span>
+        <strong id="stat-total">0</strong>
+      </article>
+      <article class="card stat-card">
+        <span class="stat-label">Easy / Medium / Hard</span>
+        <strong id="stat-difficulty">0 / 0 / 0</strong>
+      </article>
+      <article class="card stat-card">
+        <span class="stat-label">Last sync</span>
+        <strong id="stat-sync">Loading…</strong>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <section class="content-panel">
+        <div class="panel-head card section-head">
+          <div>
+            <h2>Solved Questions</h2>
+            <p id="results-meta">Loading repository data…</p>
+          </div>
+          <button class="secondary compact" id="clear-filters" type="button">Clear filters</button>
+        </div>
+
+        <div id="questions-grid" class="questions-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="card detail-panel">
+        <div class="panel-head">
+          <h2>Question details</h2>
+          <span id="detail-status">Idle</span>
+        </div>
+
+        <div id="detail-empty" class="detail-empty">
+          Select a question to see the README summary, submission date, files, and solution code.
+        </div>
+
+        <div id="detail-body" class="detail-body is-hidden">
+          <div class="detail-title-row">
+            <div>
+              <p id="detail-folder" class="eyebrow"></p>
+              <h3 id="detail-title"></h3>
+            </div>
+            <span id="detail-difficulty" class="difficulty-badge"></span>
+          </div>
+
+          <p id="detail-description" class="detail-description"></p>
+
+          <div class="detail-meta-grid">
+            <div>
+              <span class="stat-label">Submitted at</span>
+              <strong id="detail-submitted">—</strong>
+            </div>
+            <div>
+              <span class="stat-label">Files</span>
+              <strong id="detail-files">—</strong>
+            </div>
+            <div>
+              <span class="stat-label">Topics</span>
+              <strong id="detail-topics-list">—</strong>
+            </div>
+          </div>
+
+          <div>
+            <div class="detail-subhead">
+              <h4>Folder contents</h4>
+              <a id="detail-folder-link" target="_blank" rel="noreferrer">Open on GitHub</a>
+            </div>
+            <ul id="detail-files-list" class="files-list"></ul>
+          </div>
+
+          <div>
+            <div class="detail-subhead">
+              <h4>Solution code</h4>
+              <a id="detail-code-link" target="_blank" rel="noreferrer">Open raw code</a>
+            </div>
+            <pre class="code-shell"><code id="detail-code" class="code-block">Select a question to load code.</code></pre>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
