@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0035-search-insert-position) |
 | [0039-combination-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0046-permutations) |
+| [0053-maximum-subarray](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0066-plus-one](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0081-search-in-rotated-sorted-array-ii) |
@@ -69,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0023-merge-k-sorted-lists) |
+| [0053-maximum-subarray](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0191-number-of-1-bits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0191-number-of-1-bits) |
 ## Linked List
 |  |
@@ -185,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0070-climbing-stairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0070-climbing-stairs) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
