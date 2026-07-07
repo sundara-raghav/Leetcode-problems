@@ -3,12 +3,10 @@ class Solution {
       if (s.length() != t.length()) {
             return false;
         }
-        char[] sArray = s.toCharArray();
-        char[] tArray = t.toCharArray(); 
-        Arrays.sort(sArray);
-        Arrays.sort(tArray);
-        
-        return Arrays.equals(sArray, tArray);
-
+        char[] sS = s.toCharArray();
+        char[] tT = t.toCharArray(); 
+        Arrays.sort(sS);
+        Arrays.sort(tT);
+        return Arrays.equals(sS, tT);
     }
 }
