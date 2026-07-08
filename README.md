@@ -32,7 +32,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0704-binary-search](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0875-koko-eating-bananas) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
 | [0977-squares-of-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0977-squares-of-a-sorted-array) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1539-kth-missing-positive-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1539-kth-missing-positive-number) |
@@ -68,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0278-first-bad-version](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0278-first-bad-version) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0704-binary-search](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0875-koko-eating-bananas) |
@@ -81,7 +81,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0191-number-of-1-bits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0191-number-of-1-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0215-kth-largest-element-in-an-array) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
 ## Linked List
 |  |
 | ------- |
@@ -183,13 +182,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0215-kth-largest-element-in-an-array) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
 ## Merge Sort
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0023-merge-k-sorted-lists) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
 ## String Matching
 |  |
 | ------- |
@@ -330,7 +327,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0242-valid-anagram) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
 | [0977-squares-of-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0977-squares-of-a-sorted-array) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
@@ -361,14 +357,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0164-maximum-gap) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
 ## Radix Sort
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0164-maximum-gap) |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
-## Counting Sort
+## Interactive
 |  |
 | ------- |
-| [0912-sort-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0912-sort-an-array) |
+| [0278-first-bad-version](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0278-first-bad-version) |
 <!---LeetCode Topics End-->
