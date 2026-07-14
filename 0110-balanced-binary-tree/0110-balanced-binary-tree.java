@@ -14,6 +14,7 @@
  * }
  */
 class Solution {
+   
     public int height(TreeNode root,boolean[] flag){
         if(root==null) return 0;
 
@@ -31,3 +32,4 @@ class Solution {
         return (arr[0])?false:true;
     }
 }
+    
