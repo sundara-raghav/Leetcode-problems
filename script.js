@@ -410,8 +410,19 @@ function escapeHtml(value) {
 }
 
 async function fetchText(path) {
-  const isDirectUrl = path.startsWith("http") && !path.includes("api.github.com");
-  const response = await fetch(path.startsWith("http") ? path : `${API_BASE}${path}`, {
+  const isAbsoluteHttpUrl = /^https?:\/\//i.test(path);
+  let isGitHubApiHost = false;
+
+  if (isAbsoluteHttpUrl) {
+    try {
+      isGitHubApiHost = new URL(path).hostname === "api.github.com";
+    } catch (error) {
+      isGitHubApiHost = false;
+    }
+  }
+
+  const isDirectUrl = isAbsoluteHttpUrl && !isGitHubApiHost;
+  const response = await fetch(isAbsoluteHttpUrl ? path : `${API_BASE}${path}`, {
     headers: isDirectUrl ? undefined : { Accept: "application/vnd.github.object+json" },
   });
 
