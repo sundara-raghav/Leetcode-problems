@@ -130,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2769-find-the-maximum-achievable-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2769-find-the-maximum-achievable-number) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
+| [3658-gcd-of-odd-and-even-sums](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Recursion
 |  |
 | ------- |
@@ -324,6 +325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0204-count-primes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0204-count-primes) |
 | [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
+| [3658-gcd-of-odd-and-even-sums](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Queue
 |  |
 | ------- |
