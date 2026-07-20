@@ -353,6 +353,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1633-percentage-of-users-attended-a-contest](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1633-percentage-of-users-attended-a-contest) |
 | [1661-average-time-of-process-per-machine](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1661-average-time-of-process-per-machine) |
 | [1683-invalid-tweets](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1683-invalid-tweets) |
+| [1729-find-followers-count](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1729-find-followers-count) |
 | [1789-primary-department-for-each-employee](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1789-primary-department-for-each-employee) |
 | [1907-count-salary-categories](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1907-count-salary-categories) |
 | [1934-confirmation-rate](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1934-confirmation-rate) |
