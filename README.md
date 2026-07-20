@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1920-build-array-from-permutation](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1920-build-array-from-permutation) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [2108-find-first-palindromic-string-in-the-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2108-find-first-palindromic-string-in-the-array) |
 | [2798-number-of-employees-who-met-the-target](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2798-number-of-employees-who-met-the-target) |
 | [2942-find-words-containing-character](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2942-find-words-containing-character) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
@@ -182,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0387-first-unique-character-in-a-string) |
 | [0709-to-lower-case](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0709-to-lower-case) |
 | [1832-check-if-the-sentence-is-pangram](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1832-check-if-the-sentence-is-pangram) |
+| [2108-find-first-palindromic-string-in-the-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2108-find-first-palindromic-string-in-the-array) |
 | [2942-find-words-containing-character](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2942-find-words-containing-character) |
 | [3019-number-of-changing-keys](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3019-number-of-changing-keys) |
 ## Trie
@@ -211,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0344-reverse-string) |
 | [0349-intersection-of-two-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0349-intersection-of-two-arrays) |
 | [0977-squares-of-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0977-squares-of-a-sorted-array) |
+| [2108-find-first-palindromic-string-in-the-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2108-find-first-palindromic-string-in-the-array) |
 ## Stack
 |  |
 | ------- |
