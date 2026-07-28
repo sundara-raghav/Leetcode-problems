@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0217-contains-duplicate) |
 | [0240-search-a-2d-matrix-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
 | [0268-missing-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0268-missing-number) |
+| [0283-move-zeroes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0349-intersection-of-two-arrays) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0704-binary-search](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0704-binary-search) |
@@ -225,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0151-reverse-words-in-a-string) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0202-happy-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0202-happy-number) |
+| [0283-move-zeroes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0345-reverse-vowels-of-a-string) |
 | [0349-intersection-of-two-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0349-intersection-of-two-arrays) |
