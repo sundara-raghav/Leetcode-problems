@@ -163,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2652-sum-multiples](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2652-sum-multiples) |
 | [2769-find-the-maximum-achievable-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2769-find-the-maximum-achievable-number) |
 | [2894-divisible-and-non-divisible-sums-difference](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2894-divisible-and-non-divisible-sums-difference) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
@@ -204,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1832-check-if-the-sentence-is-pangram](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1832-check-if-the-sentence-is-pangram) |
 | [2108-find-first-palindromic-string-in-the-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2108-find-first-palindromic-string-in-the-array) |
 | [2942-find-words-containing-character](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2942-find-words-containing-character) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3019-number-of-changing-keys](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3019-number-of-changing-keys) |
 | [3499-maximize-active-section-with-trade-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3499-maximize-active-section-with-trade-i) |
 ## Trie
@@ -433,6 +435,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0011-container-with-most-water) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 ## Sliding Window
 |  |
 | ------- |
