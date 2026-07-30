@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3683-earliest-time-to-finish-one-task](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3683-earliest-time-to-finish-one-task) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Hash Table
 |  |
 | ------- |
@@ -164,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Recursion
 |  |
 | ------- |
@@ -233,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0349-intersection-of-two-arrays) |
 | [0977-squares-of-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0977-squares-of-a-sorted-array) |
 | [2108-find-first-palindromic-string-in-the-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2108-find-first-palindromic-string-in-the-array) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Stack
 |  |
 | ------- |
@@ -396,6 +399,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3658-gcd-of-odd-and-even-sums) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Queue
 |  |
 | ------- |
@@ -414,6 +418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1260-shift-2d-grid](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1260-shift-2d-grid) |
 | [1920-build-array-from-permutation](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1920-build-array-from-permutation) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -448,6 +453,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Prefix Sum
 |  |
 | ------- |
