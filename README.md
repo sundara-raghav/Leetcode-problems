@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1331-rank-transform-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1331-rank-transform-of-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1539-kth-missing-positive-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1539-kth-missing-positive-number) |
+| [1550-three-consecutive-odds](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1550-three-consecutive-odds) |
 | [1672-richest-customer-wealth](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1672-richest-customer-wealth) |
 | [1732-find-the-highest-altitude](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1732-find-the-highest-altitude) |
 | [1800-maximum-ascending-subarray-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1800-maximum-ascending-subarray-sum) |
