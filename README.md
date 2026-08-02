@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0875-koko-eating-bananas](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0875-koko-eating-bananas) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 | [0977-squares-of-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0977-squares-of-a-sorted-array) |
+| [0994-rotting-oranges](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0994-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1260-shift-2d-grid](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1260-shift-2d-grid) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
@@ -480,6 +481,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0074-search-a-2d-matrix) |
 | [0240-search-a-2d-matrix-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
+| [0994-rotting-oranges](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0994-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1260-shift-2d-grid](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1260-shift-2d-grid) |
 | [1672-richest-customer-wealth](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1672-richest-customer-wealth) |
@@ -494,6 +496,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0111-minimum-depth-of-binary-tree](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0226-invert-binary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0617-merge-two-binary-trees) |
+| [0994-rotting-oranges](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0994-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
 ## Quickselect
 |  |
