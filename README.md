@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0349-intersection-of-two-arrays) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
+| [0682-baseball-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0682-baseball-game) |
 | [0704-binary-search](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0875-koko-eating-bananas) |
@@ -255,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0143-reorder-list](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0143-reorder-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0145-binary-tree-postorder-traversal) |
+| [0682-baseball-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0682-baseball-game) |
 | [0739-daily-temperatures](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0739-daily-temperatures) |
 ## Heap (Priority Queue)
 |  |
@@ -427,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0067-add-binary) |
 | [0258-add-digits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0258-add-digits) |
 | [0657-robot-return-to-origin](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0657-robot-return-to-origin) |
+| [0682-baseball-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0682-baseball-game) |
 | [1260-shift-2d-grid](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1260-shift-2d-grid) |
 | [1920-build-array-from-permutation](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1920-build-array-from-permutation) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
