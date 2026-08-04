@@ -2,20 +2,22 @@ import java.util.*;
 
 class Solution {
     public List<Integer> findMissingElements(int[] nums) {
-        List<Integer> ls = new LinkedList<>();
-        Arrays.sort(nums); 
-        int expected = nums[0];
-        int index = 0;
-        while (expected <= nums[nums.length - 1]) {
-            if (index < nums.length && nums[index] == expected) {
-               
-                while (index < nums.length && nums[index] == expected) {
-                    index++;
-                }
-            } else {
-                ls.add(expected);
+        List<Integer> ls = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
+        
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        
+        for (int num : nums) {
+            set.add(num);
+            if (num < min) min = num;
+            if (num > max) max = num;
+        }
+        
+        for (int i = min + 1; i < max; i++) {
+            if (!set.contains(i)) {
+                ls.add(i);
             }
-            expected++;
         }
         
         return ls;
