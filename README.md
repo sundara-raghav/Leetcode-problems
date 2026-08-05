@@ -346,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0543-diameter-of-binary-tree](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0543-diameter-of-binary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0617-merge-two-binary-trees) |
+| [3310-remove-methods-from-project](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3310-remove-methods-from-project) |
 ## Binary Tree
 |  |
 | ------- |
@@ -502,6 +503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0617-merge-two-binary-trees](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0617-merge-two-binary-trees) |
 | [0994-rotting-oranges](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0994-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
+| [3310-remove-methods-from-project](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3310-remove-methods-from-project) |
 ## Quickselect
 |  |
 | ------- |
@@ -532,4 +534,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0292-nim-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0292-nim-game) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
+## Graph Theory
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3310-remove-methods-from-project) |
 <!---LeetCode Topics End-->
