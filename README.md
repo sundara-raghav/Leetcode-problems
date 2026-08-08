@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0349-intersection-of-two-arrays) |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0682-baseball-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0682-baseball-game) |
 | [0704-binary-search](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0704-binary-search) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0326-power-of-three) |
 | [0367-valid-perfect-square](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0367-valid-perfect-square) |
 | [0371-sum-of-two-integers](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0371-sum-of-two-integers) |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
@@ -194,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0326-power-of-three) |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
 ## String
 |  |
@@ -311,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0338-counting-bits](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0338-counting-bits) |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -548,9 +552,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0292-nim-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0292-nim-game) |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 ## Graph Theory
 |  |
 | ------- |
 | [3310-remove-methods-from-project](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3310-remove-methods-from-project) |
+## Minimax
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
+## Zero-Sum Game
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
