@@ -171,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1486-xor-operation-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1486-xor-operation-in-an-array) |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1822-sign-of-the-product-of-an-array) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2520-count-the-digits-that-divide-a-number) |
@@ -320,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Memoization
 |  |
@@ -559,6 +561,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 ## Graph Theory
 |  |
 | ------- |
@@ -568,9 +571,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 ## Zero-Sum Game
 |  |
 | ------- |
 | [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
+## Nim Game
+|  |
+| ------- |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
+## Sprague–Grundy Theorem
+|  |
+| ------- |
+| [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 <!---LeetCode Topics End-->
