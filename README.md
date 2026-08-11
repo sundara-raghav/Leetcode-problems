@@ -67,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2798-number-of-employees-who-met-the-target](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2798-number-of-employees-who-met-the-target) |
 | [2942-find-words-containing-character](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2942-find-words-containing-character) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
+| [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
@@ -90,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0387-first-unique-character-in-a-string) |
 | [1331-rank-transform-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1331-rank-transform-of-an-array) |
 | [1832-check-if-the-sentence-is-pangram](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1832-check-if-the-sentence-is-pangram) |
+| [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3731-find-missing-elements](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3731-find-missing-elements) |
 ## Binary Search
 |  |
@@ -497,6 +499,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
+| [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
 | [3731-find-missing-elements](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3731-find-missing-elements) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
