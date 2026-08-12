@@ -67,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2535-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2535-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2798-number-of-employees-who-met-the-target](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2798-number-of-employees-who-met-the-target) |
 | [2942-find-words-containing-character](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2942-find-words-containing-character) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0387-first-unique-character-in-a-string) |
 | [1331-rank-transform-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1331-rank-transform-of-an-array) |
 | [1832-check-if-the-sentence-is-pangram](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1832-check-if-the-sentence-is-pangram) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3731-find-missing-elements](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3731-find-missing-elements) |
 ## Binary Search
@@ -485,6 +487,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0003-longest-substring-without-repeating-characters) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Sorting
 |  |
 | ------- |
