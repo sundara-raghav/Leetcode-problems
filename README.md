@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3024-type-of-triangle](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3024-type-of-triangle) |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
@@ -484,6 +485,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1260-shift-2d-grid](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1260-shift-2d-grid) |
 | [1920-build-array-from-permutation](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1920-build-array-from-permutation) |
 | [2974-minimum-number-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2974-minimum-number-game) |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Binary Search Tree
 |  |
