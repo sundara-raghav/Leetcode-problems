@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1800-maximum-ascending-subarray-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1800-maximum-ascending-subarray-sum) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1822-sign-of-the-product-of-an-array) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 | [1920-build-array-from-permutation](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1920-build-array-from-permutation) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2029-stone-game-ix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2029-stone-game-ix) |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1563-stone-game-v) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1822-sign-of-the-product-of-an-array) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 | [1927-sum-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1927-sum-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2029-stone-game-ix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2029-stone-game-ix) |
@@ -350,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1563-stone-game-v) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Memoization
 |  |
@@ -543,6 +546,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1732-find-the-highest-altitude](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1732-find-the-highest-altitude) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 ## Matrix
 |  |
 | ------- |
@@ -600,6 +604,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1563-stone-game-v) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 | [1927-sum-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2029-stone-game-ix) |
 ## Graph Theory
@@ -612,6 +617,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2029-stone-game-ix) |
 ## Zero-Sum Game
 |  |
@@ -619,6 +625,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1510-stone-game-iv) |
+| [1872-stone-game-viii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2029-stone-game-ix) |
 ## Nim Game
 |  |
