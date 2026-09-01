@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3232-find-if-digit-game-can-be-won](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3232-find-if-digit-game-can-be-won) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3683-earliest-time-to-finish-one-task](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3683-earliest-time-to-finish-one-task) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 | [3731-find-missing-elements](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3731-find-missing-elements) |
@@ -106,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3471-find-the-largest-almost-missing-integer) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3731-find-missing-elements](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3731-find-missing-elements) |
 ## Binary Search
 |  |
@@ -342,6 +344,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1486-xor-operation-in-an-array](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1486-xor-operation-in-an-array) |
 | [2220-minimum-bit-flips-to-convert-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/2220-minimum-bit-flips-to-convert-number) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3513-number-of-unique-xor-triplets-i) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 ## Dynamic Programming
 |  |
@@ -564,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1260-shift-2d-grid](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1260-shift-2d-grid) |
 | [1672-richest-customer-wealth](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1672-richest-customer-wealth) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -578,6 +582,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0994-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1091-shortest-path-in-binary-matrix) |
 | [3310-remove-methods-from-project](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3310-remove-methods-from-project) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/sundara-raghav/Leetcode-problems/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Quickselect
 |  |
 | ------- |
