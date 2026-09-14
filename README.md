@@ -189,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0371-sum-of-two-integers) |
 | [0486-predict-the-winner](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0486-predict-the-winner) |
 | [0509-fibonacci-number](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0509-fibonacci-number) |
+| [0836-rectangle-overlap](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0836-rectangle-overlap) |
 | [0877-stone-game](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1140-stone-game-ii) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/sundara-raghav/Leetcode-problems/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
@@ -670,4 +671,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0005-longest-palindromic-substring) |
+## Geometry
+|  |
+| ------- |
+| [0836-rectangle-overlap](https://github.com/sundara-raghav/Leetcode-problems/tree/master/0836-rectangle-overlap) |
 <!---LeetCode Topics End-->
